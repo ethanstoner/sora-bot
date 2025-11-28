@@ -79,7 +79,7 @@ python3 sora_bot.py
 
 ## Usage
 
-The bot listens on channel ID: `1440947548364734599`
+The bot listens on the channel specified by `TARGET_CHANNEL_ID` in your `.env` file.
 
 ### Commands
 
@@ -114,9 +114,9 @@ The bot is designed to be lightweight:
 ### Bot not responding?
 
 1. Check that Message Content Intent is enabled in Discord Developer Portal
-2. Verify bot is in the correct channel (ID: 1440947548364734599)
+2. Verify `TARGET_CHANNEL_ID` in `.env` matches your channel ID
 3. Check logs: `docker-compose logs -f` or console output
-4. Verify `.env` file has correct tokens
+4. Verify `.env` file has correct tokens and channel ID
 
 ### Rate limiting?
 
