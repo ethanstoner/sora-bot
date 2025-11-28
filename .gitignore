@@ -7,3 +7,15 @@ __pycache__/
 venv/
 env/
 *.log
+
+# Test files
+test_*.py
+*_test.py
+*test*.py
+
+# Internal documentation
+PROJECT_STATUS.md
+
+# Development tools
+qa-check.sh
+.cursorignore
