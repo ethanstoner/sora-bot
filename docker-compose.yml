@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  sora-bot:
+    build: .
+    container_name: sora-bot
+    restart: unless-stopped
+    environment:
+      - DISCORD_BOT_TOKEN=${DISCORD_BOT_TOKEN}
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    volumes:
+      - ./.env:/app/.env:ro
+    # Resource limits for mini PC
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+        reservations:
+          cpus: '0.1'
+          memory: 128M
