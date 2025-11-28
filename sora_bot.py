@@ -1296,6 +1296,11 @@ if __name__ == '__main__':
         print("ERROR: GROQ_API_KEY not found in .env file!", flush=True)
         sys.exit(1)
     
+    if not TARGET_CHANNEL_ID:
+        print("ERROR: TARGET_CHANNEL_ID not found in .env file!", flush=True)
+        print("Right-click your Discord channel and select 'Copy Channel ID'", flush=True)
+        sys.exit(1)
+    
     try:
         bot.run(DISCORD_BOT_TOKEN)
     except Exception as e:
