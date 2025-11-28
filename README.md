@@ -4,11 +4,11 @@ A lightweight Discord bot that generates viral Sora 2 video prompts using Groq A
 
 ## Features
 
-- 🎬 Generates ultra-detailed, viral-worthy Sora prompts
-- 🚀 Lightweight and efficient (designed for mini PCs)
-- 🐳 Docker-ready with resource limits
-- 📝 10 different prompt templates
-- ⚡ Fast responses using Groq API
+- Generates ultra-detailed, viral-worthy Sora prompts
+- Lightweight and efficient (designed for mini PCs)
+- Docker-ready with resource limits
+- 10 different prompt templates
+- Fast responses using Groq API
 
 ## Setup
 
