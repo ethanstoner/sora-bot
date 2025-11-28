@@ -18,7 +18,7 @@ load_dotenv()
 # Configuration
 DISCORD_BOT_TOKEN = os.getenv('DISCORD_BOT_TOKEN')
 GROQ_API_KEY = os.getenv('GROQ_API_KEY')
-TARGET_CHANNEL_ID = 1440947548364734599
+TARGET_CHANNEL_ID = int(os.getenv('TARGET_CHANNEL_ID', '0'))
 
 # Webhook configuration for custom name/avatar in target channel
 SORA_WEBHOOK_NAME = "Sora Prompting"
